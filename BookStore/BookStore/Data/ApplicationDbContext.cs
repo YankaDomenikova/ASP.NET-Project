@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+using BookStore.Data.Seed;
 using BookStore.Models;
 
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -22,6 +23,9 @@ namespace BookStore.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            SeedData seed = new SeedData();
+            modelBuilder = seed.GenerateModels(modelBuilder);
         }
     }
 }

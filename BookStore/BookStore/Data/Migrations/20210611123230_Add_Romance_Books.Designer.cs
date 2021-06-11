@@ -4,14 +4,16 @@ using BookStore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookStore.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210611123230_Add_Romance_Books")]
+    partial class Add_Romance_Books
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,7 +82,7 @@ namespace BookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7810c0b5-e8ee-4a0c-b",
+                            Id = "23c891ac-993d-4d40-9",
                             Author = "Diana Gabaldon",
                             BestsellerRank = 132,
                             Country = "United States",
@@ -97,7 +99,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "a71823fb-2bdc-4403-b",
+                            Id = "10d27a42-5066-46ca-a",
                             Author = "Lucinda Riley",
                             BestsellerRank = 391,
                             Country = "United Kingdom",
@@ -114,7 +116,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "56fc12dc-ddf2-4222-b",
+                            Id = "6c9a8ac2-0cc4-4f64-8",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 11,
                             Country = "United States",
@@ -131,7 +133,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "a4201083-ca4e-4aeb-a",
+                            Id = "ace19c1e-5e5a-4a1b-9",
                             Author = "Colleen Hoover",
                             BestsellerRank = 121,
                             Country = "United Kingdom",
@@ -148,7 +150,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "345e9ce4-9efd-4fd0-9",
+                            Id = "bc1848dd-5ba0-4d6b-a",
                             Author = "Lucinda Riley",
                             BestsellerRank = 264,
                             Country = " United Kingdom",
@@ -165,7 +167,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "2a9e9e30-7bf8-4227-8",
+                            Id = "e0423cb7-9d7e-427f-a",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 168,
                             Country = "United States",
@@ -182,7 +184,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "dd4bebbd-200d-4c93-9",
+                            Id = "bfa7fb8c-2994-408f-b",
                             Author = "Morgan Rogers",
                             BestsellerRank = 280,
                             Country = "United States",
@@ -199,7 +201,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "100250ce-e006-4950-b",
+                            Id = "747ce5ca-01ec-4cf2-8",
                             Author = "Sally Rooney",
                             BestsellerRank = 141,
                             Country = "United Kingdom",
@@ -216,7 +218,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "32c55b5d-49b7-4cfb-8",
+                            Id = "21eee644-7554-44d0-b",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 149,
                             Country = "United Kingdom",
@@ -233,7 +235,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "419d64cb-a1be-4c07-8",
+                            Id = "3fbc718d-06c9-4aa4-b",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 264,
                             Country = "United Kingdom",
@@ -266,50 +268,6 @@ namespace BookStore.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "b7fe98c1-2d3b-4b2b-a",
-                            Description = "All Fiction Books",
-                            Title = "Fiction"
-                        },
-                        new
-                        {
-                            Id = "09f98af0-2c07-4a23-8",
-                            Description = "All Fantasy Books",
-                            Title = "Fantasy"
-                        },
-                        new
-                        {
-                            Id = "9fac31ce-1388-433c-8",
-                            Description = "All Romance Books",
-                            Title = "Romance"
-                        },
-                        new
-                        {
-                            Id = "65c420c0-8ca0-418b-a",
-                            Description = "All Horror  Books",
-                            Title = "Horror"
-                        },
-                        new
-                        {
-                            Id = "3c7d64b5-e7a5-435f-9",
-                            Description = "All Poetry & Drama Books",
-                            Title = "Poetry & Drama"
-                        },
-                        new
-                        {
-                            Id = "d01ab63e-2416-4d3b-b",
-                            Description = "All Thriller Books",
-                            Title = "Thriller "
-                        },
-                        new
-                        {
-                            Id = "804bfc7e-2732-4f73-9",
-                            Description = "All Children's Books Books",
-                            Title = "Children's Books"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

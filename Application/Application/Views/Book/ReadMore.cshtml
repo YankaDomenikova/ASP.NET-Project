@@ -1,0 +1,35 @@
+﻿@model BookViewModel
+
+<div class="container">
+    <div class="row">
+            <div class="col-md-4">
+                <img src="@Model.ImageUrl" alt="Image not found" />
+            </div>
+            <div class="col-md-4">
+                <h2>@Model.Title</h2>
+                <p>By (author) @Model.Author</p>
+                <p>@Model.Description</p>
+            </div>
+            <div class="sol-md-4">
+                <p>$@Model.Price</p>
+                <partial name="_BookQuantity" model="@Model" />
+                <p>Free delivery worldwide</p>
+                <partial name="_AddToCartButton" model="@Model" />
+            </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p>Publication date: @Model.PublicationDate</p>
+            <p>Publisher: @Model.Publisher</p>
+            <p>Publication country: @Model.Country</p>
+        </div>
+        <div class="col-md-3">
+            <p>Pages: @Model.Pages</p>
+            <p>Language: @Model.Language</p>
+            <p>Bestsellers rank: @Model.BestsellerRank\</p>
+        </div>
+    </div>
+</div>

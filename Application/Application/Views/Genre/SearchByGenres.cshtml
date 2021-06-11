@@ -1,0 +1,16 @@
+﻿@model List<GenreViewModel>
+
+<div class="row">
+    <h2>Search By Genre</h2>
+</div>
+<div class="row">
+    @foreach (GenreViewModel genre in Model)
+	 {
+        <div class="col-md-2">
+            <a asp-controller="Genre" asp-action="GetBookByGenre" asp-route-title="@genre.Title">@genre.Title</a>
+        </div>
+	 }
+    <div class="col-md-2">
+        <a asp-controller="Book" asp-action="AllBooks">All Books</a>
+    </div>
+</div>

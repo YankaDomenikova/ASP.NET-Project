@@ -1,0 +1,14 @@
+﻿@model BookViewModel
+
+@if (Model.Quantity >= 5)
+{
+    <p class="text-success">In Stock</p>
+}
+else if (Model.Quantity <= 4 && Model.Quantity >= 1)
+{
+    <p class="text-warning">Last Products</p>
+}
+else if (Model.Quantity == 0)
+{
+    <p class="text-danger">Out of Stock</p>
+}

@@ -1,0 +1,17 @@
+﻿@model List<BookViewModel>
+
+@foreach (BookViewModel book in Model)
+{
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" src="@book.ImageUrl" alt="Image not found" style="height: 250px; width: 200px">
+            <div class="card-body">
+                <h5 class="card-title">@book.Title</h5>
+                <p>@book.Author</p>
+                <partial name="_BookQuantity" model="@book" />
+                <p>$@book.Price</p>
+                <a class="btn btn-warning" asp-controller="Book" asp-route-id="@book.Id" asp-action="ReadMore">Read More</a>
+            </div>
+        </div>
+    </div>
+}

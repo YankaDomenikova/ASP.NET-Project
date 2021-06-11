@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 
 using BookStore.Data;
 using BookStore.Models;
+using BookStore.Services;
+using BookStore.Services.Interfaces;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +40,12 @@ namespace BookStore
             services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            services.AddRazorPages()
+                    .AddRazorRuntimeCompilation();
+
+            services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IGenreService, GenreService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

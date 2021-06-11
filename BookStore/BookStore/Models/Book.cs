@@ -31,8 +31,10 @@ namespace BookStore.Models
 
         public string PublicationDate { get; set; }
 
+        [MaxLength(75)]
         public string Publisher { get; set; }
 
+        [MaxLength(65)]
         public string Country { get; set; }
 
         public int BestsellerRank { get; set; }

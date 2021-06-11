@@ -9,14 +9,14 @@ namespace BookStore.Models
     public class Book : BaseModel
     {
         [MinLength(1)]
-        [MaxLength(70)]
+        [MaxLength(85)]
         public string Title { get; set; }
 
         [MinLength(2)]
         [MaxLength(65)]
         public string Author { get; set; }
 
-        [MaxLength(1100)]
+        [MaxLength(1750)]
         public string Description { get; set; }
 
         public double Price { get; set; }
@@ -31,7 +31,7 @@ namespace BookStore.Models
 
         public string PublicationDate { get; set; }
 
-        [MaxLength(75)]
+        [MaxLength(85)]
         public string Publisher { get; set; }
 
         [MaxLength(65)]

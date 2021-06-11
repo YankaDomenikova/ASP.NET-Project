@@ -4,14 +4,16 @@ using BookStore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BookStore.Data.Migrations
+namespace BookStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210611141754_Add_Books")]
+    partial class Add_Books
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,8 +38,8 @@ namespace BookStore.Data.Migrations
                         .HasColumnType("nvarchar(65)");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(1100)
-                        .HasColumnType("nvarchar(1100)");
+                        .HasMaxLength(1750)
+                        .HasColumnType("nvarchar(1750)");
 
                     b.Property<string>("GenreId")
                         .HasColumnType("nvarchar(450)");
@@ -61,15 +63,15 @@ namespace BookStore.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Publisher")
-                        .HasMaxLength(75)
-                        .HasColumnType("nvarchar(75)");
+                        .HasMaxLength(85)
+                        .HasColumnType("nvarchar(85)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
-                        .HasMaxLength(70)
-                        .HasColumnType("nvarchar(70)");
+                        .HasMaxLength(85)
+                        .HasColumnType("nvarchar(85)");
 
                     b.HasKey("Id");
 
@@ -80,7 +82,7 @@ namespace BookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7810c0b5-e8ee-4a0c-b",
+                            Id = "d3bcf259-1578-4f49-b",
                             Author = "Diana Gabaldon",
                             BestsellerRank = 132,
                             Country = "United States",
@@ -97,7 +99,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "a71823fb-2bdc-4403-b",
+                            Id = "aac45d7d-b6ca-44a4-8",
                             Author = "Lucinda Riley",
                             BestsellerRank = 391,
                             Country = "United Kingdom",
@@ -114,7 +116,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "56fc12dc-ddf2-4222-b",
+                            Id = "01ea198d-0362-47ba-b",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 11,
                             Country = "United States",
@@ -131,7 +133,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "a4201083-ca4e-4aeb-a",
+                            Id = "dd3a9329-108d-42d5-a",
                             Author = "Colleen Hoover",
                             BestsellerRank = 121,
                             Country = "United Kingdom",
@@ -148,7 +150,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "345e9ce4-9efd-4fd0-9",
+                            Id = "6fab5d23-8d68-4f27-a",
                             Author = "Lucinda Riley",
                             BestsellerRank = 264,
                             Country = " United Kingdom",
@@ -165,7 +167,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "2a9e9e30-7bf8-4227-8",
+                            Id = "d62332ac-db52-4c1a-8",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 168,
                             Country = "United States",
@@ -182,7 +184,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "dd4bebbd-200d-4c93-9",
+                            Id = "06f4a297-4c64-444f-a",
                             Author = "Morgan Rogers",
                             BestsellerRank = 280,
                             Country = "United States",
@@ -199,7 +201,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "100250ce-e006-4950-b",
+                            Id = "c5ba0798-68f4-4991-b",
                             Author = "Sally Rooney",
                             BestsellerRank = 141,
                             Country = "United Kingdom",
@@ -216,7 +218,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "32c55b5d-49b7-4cfb-8",
+                            Id = "eab713df-7a0e-4657-8",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 149,
                             Country = "United Kingdom",
@@ -233,7 +235,7 @@ namespace BookStore.Data.Migrations
                         },
                         new
                         {
-                            Id = "419d64cb-a1be-4c07-8",
+                            Id = "d1f76c7a-8383-4c3b-b",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 264,
                             Country = "United Kingdom",
@@ -247,6 +249,312 @@ namespace BookStore.Data.Migrations
                             Publisher = "Orion Publishing Co",
                             Quantity = 12,
                             Title = "Eleanor & Park"
+                        },
+                        new
+                        {
+                            Id = "5ba9c349-f416-40f6-9",
+                            Author = "Stephen King",
+                            BestsellerRank = 156,
+                            Country = "United States",
+                            Description = "Before Doctor Sleep, there was The Shining, a classic of modern American horror from the undisputed master, Stephen King. Jack Torrance's new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he'll have plenty of time to spend reconnecting with his family and working on his writing. But as the harsh winter weather sets in, the idyllic location feels ever more remote . . . and more sinister. And the only one to notice the strange and terrible forces gathering around the Overlook is Danny Torrance, a uniquely gifted five-year-old.",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/TheShining.jpg",
+                            Language = "English",
+                            Pages = 688,
+                            Price = 10.539999999999999,
+                            PublicationDate = "07 Feb 2020",
+                            Publisher = "Random House USA Inc",
+                            Quantity = 25,
+                            Title = "The Shining"
+                        },
+                        new
+                        {
+                            Id = "cd4d719e-e781-43a0-b",
+                            Author = "Stephen King",
+                            BestsellerRank = 160,
+                            Country = "United Kingdom",
+                            Description = "Derry, Maine is just an ordinary town: familiar, well-ordered for the most part, a good place to live. It is a group of children who see - and feel - what makes Derry so horribly different. In the storm drains, in the sewers, IT lurks, taking on the shape of every nightmare, each one's deepest dread. Sometimes is appears as an evil clown named Pennywise and sometimes IT reaches up, seizing, tearing, killing . . . Time passes and the children grow up, move away and forget. Until they are called back, once more to confront IT as IT stirs and coils in the sullen depths of their memories, emerging again to make their past nightmares a terrible present reality.",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/It.jpg",
+                            Language = "English",
+                            Pages = 1184,
+                            Price = 17.989999999999998,
+                            PublicationDate = "21 Jul 2011",
+                            Publisher = "HODDER & STOUGHTON",
+                            Quantity = 21,
+                            Title = "It"
+                        },
+                        new
+                        {
+                            Id = "dd9751c9-3bbd-47b9-8",
+                            Author = "Shirley Jackson",
+                            BestsellerRank = 579,
+                            Country = "United Kingdom",
+                            Description = "Alone in the world, Eleanor is delighted to take up Dr Montague's invitation to spend a summer in the mysterious Hill House. Joining them are Theodora, an artistic 'sensitive', and Luke, heir to the house. But what begins as a light-hearted experiment is swiftly proven to be a trip into their darkest nightmares, and an investigation that one of their number may not survive. Twice filmed as The Haunting, and the inspiration for a 10-part Netflix series, The Haunting of Hill House is a powerful work of slow-burning psychological horror.",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/TheHaunting.jpg",
+                            Language = "English",
+                            Pages = 256,
+                            Price = 20.309999999999999,
+                            PublicationDate = "01 Oct 2009",
+                            Publisher = "Penguin Books Ltd",
+                            Quantity = 4,
+                            Title = "The Haunting of Hill House"
+                        },
+                        new
+                        {
+                            Id = "a4fa28fa-deb6-4b6a-b",
+                            Author = "Bret Easton Ellis",
+                            BestsellerRank = 303,
+                            Country = "United States",
+                            Description = "In American Psycho, Bret Easton Ellis imaginatively explores the incomprehensible depths of madness and captures the insanity of violence in our time or any other. Patrick Bateman moves among the young and trendy in 1980s Manhattan. Young, handsome, and well educated, Bateman earns his fortune on Wall Street by day while spending his nights in ways we cannot begin to fathom. Expressing his true self through torture and murder, Bateman prefigures an apocalyptic horror that no society could bear to confront.",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/AmericanPsycho.jpg",
+                            Language = "English",
+                            Pages = 416,
+                            Price = 15.130000000000001,
+                            PublicationDate = "06 Jun 2008",
+                            Publisher = "Random House USA Inc",
+                            Quantity = 0,
+                            Title = "American Psycho"
+                        },
+                        new
+                        {
+                            Id = "ca570351-f3ca-403b-9",
+                            Author = " Mary Shelley",
+                            BestsellerRank = 491,
+                            Country = "United Kingdom",
+                            Description = "A twisted, upside-down creation myth, Mary Shelley's chilling Gothic tale lays bare the dark side of science, and the horror within us all. It tells the story of Victor Frankenstein, who plunders graveyards to create a new being from the bodies of the dead - but whose botched creature causes nothing but murder and destruction. Written after a nightmare when its author was only eighteen, Frankenstein gave birth to the modern science fiction novel.",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/Frankenstein.jpg",
+                            Language = "English",
+                            Pages = 288,
+                            Price = 17.809999999999999,
+                            PublicationDate = "01 May 2012",
+                            Publisher = "Penguin Books Ltd",
+                            Quantity = 20,
+                            Title = "Frankenstein"
+                        },
+                        new
+                        {
+                            Id = "583e8f45-2706-4030-9",
+                            Author = "Bram Stoker",
+                            BestsellerRank = 342,
+                            Country = " United Kingdom",
+                            Description = "There he lay looking as if youth had been half-renewed, for the white hair and moustache were changed to dark iron-grey, the cheeks were fuller, and the white skin seemed ruby-red underneath; the mouth was redder than ever, for on the lips were gouts of fresh blood, which trickled from the corners of the mouth and ran over the chin and neck. Even the deep, burning eyes seemed set amongst the swollen flesh, for the lids and pouches underneath were bloated. It seemed as if the whole awful creature were simply gorged with blood; he lay like a filthy leech, exhausted with his repletion.",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/Dracula.jpg",
+                            Language = "English",
+                            Pages = 532,
+                            Price = 10.23,
+                            PublicationDate = "01 Aug 1997",
+                            Publisher = "Wordsworth Editions Ltd",
+                            Quantity = 3,
+                            Title = "Dracula"
+                        },
+                        new
+                        {
+                            Id = "60b82636-efb3-4419-8",
+                            Author = "John Fowles",
+                            BestsellerRank = 604,
+                            Country = "United Kingdom",
+                            Description = "Withdrawn, uneducated and unloved, Frederick collects butterflies and takes photographs. He is obsessed with a beautiful stranger, art student Miranda. Coming into unexpected money, he buys a remote Sussex house and calmly abducts Miranda, believing she will grow to love him in time. Alone and desperate, Miranda must struggle to understand her captor if she is to gain her freedom...",
+                            GenreTitle = "Horror",
+                            ImageUrl = "https://localhost:5001/images/horror/Thecollector.jpg",
+                            Language = "English",
+                            Pages = 288,
+                            Price = 14.26,
+                            PublicationDate = "30 Nov 2007",
+                            Publisher = "Vintage Publishing",
+                            Quantity = 0,
+                            Title = "The Collector"
+                        },
+                        new
+                        {
+                            Id = "8115ef8e-6561-411f-9",
+                            Author = "Ed Bryan",
+                            BestsellerRank = 918,
+                            Country = "United Kingdom",
+                            Description = "When the wicked queen discovers that her stepdaughter, Snow White, is the most beautiful woman in the land, she orders the huntsman to kill her. But Snow White escapes and finds a wonderful new home living with seven friendly dwarfs in a cosy cottage. That is, until the wicked queen pays a visit . . . It's up to the seven dwarfs and a very kind prince to defeat the queen and help Snow White live happily ever after!",
+                            GenreTitle = "Children's Books",
+                            ImageUrl = "https://localhost:5001/images/childrenbooks/SnowWhite.jpg",
+                            Language = "English",
+                            Pages = 32,
+                            Price = 18.600000000000001,
+                            PublicationDate = "04 Jul 2019",
+                            Publisher = "Nosy Crow Ltd",
+                            Quantity = 13,
+                            Title = "Fairy Tales: Snow White"
+                        },
+                        new
+                        {
+                            Id = "293f1b61-3ad2-4d08-8",
+                            Author = "Ed Bryan",
+                            BestsellerRank = 651,
+                            Country = "United Kingdom",
+                            Description = "When Goldilocks gets lost in the woods, she finds herself at a cosy little cottage. She is delighted to find three bowls of porridge on the table, three chairs in the living room and some very bouncy beds in the bedroom. But little does Goldilocks know, this cottage belongs to three bears, and they're on their way back home . . .",
+                            GenreTitle = "Children's Books",
+                            ImageUrl = "https://localhost:5001/images/childrenbooks/Goldilocks.jpg",
+                            Language = "English",
+                            Pages = 32,
+                            Price = 18.600000000000001,
+                            PublicationDate = "07 Mar 2019",
+                            Publisher = "Nosy Crow Ltd",
+                            Quantity = 12,
+                            Title = "Fairy Tales: Goldilocks and the Three Bears"
+                        },
+                        new
+                        {
+                            Id = "36a26a86-538d-447c-a",
+                            Author = "Nosy Crow",
+                            BestsellerRank = 781,
+                            Country = "United Kingdom",
+                            Description = "Little Red Riding Hood sets out into the forest to take a basket of goodies to her poorly grandma. Along the way, she adds to her stores, picking beautiful flowers, gathering fallen acorns and receiving a gift of some nice, sticky honey. She thinks these treats will cheer up her grandma. But little does she know that they could just save her from the Big Bad Wolf . . .",
+                            GenreTitle = "Children's Books",
+                            ImageUrl = "https://localhost:5001/images/childrenbooks/LittleRedRidingHood.jpg",
+                            Language = "English",
+                            Pages = 32,
+                            Price = 18.600000000000001,
+                            PublicationDate = "31 Dec 2016",
+                            Publisher = "Nosy Crow Ltd",
+                            Quantity = 2,
+                            Title = "Fairy Tales: Little Red Riding Hood"
+                        },
+                        new
+                        {
+                            Id = "a839466f-34bb-4e0b-9",
+                            Author = "Yung Pueblo",
+                            BestsellerRank = 152,
+                            Country = "United States",
+                            Description = "In Clarity & Connection, Yung Pueblo describes how intense emotions accumulate in our subconscious and condition us to act and react in certain ways. In his characteristically spare, poetic style, he guides readers through the excavation and release of the past that is required for growth.",
+                            GenreTitle = "Poetry & Drama",
+                            ImageUrl = "https://localhost:5001/images/poetry&drama/Clarity.jpg",
+                            Language = "English",
+                            Pages = 256,
+                            Price = 29.789999999999999,
+                            PublicationDate = "27 May 2021",
+                            Publisher = "Andrews McMeel Publishing",
+                            Quantity = 5,
+                            Title = "Clarity & Connection"
+                        },
+                        new
+                        {
+                            Id = "3270ace6-237c-409c-8",
+                            Author = "Rupi Kaur",
+                            BestsellerRank = 332,
+                            Country = "United States",
+                            Description = "The book is divided into four chapters, and each chapter serves a different purpose. Deals with a different pain. Heals a different heartache. Milk and Honey takes readers through a journey of the most bitter moments in life and finds sweetness in them because there is sweetness everywhere if you are just willing to look.",
+                            GenreTitle = "Poetry & Drama",
+                            ImageUrl = "https://localhost:5001/images/poetry&drama/",
+                            Language = "English",
+                            Pages = 208,
+                            Price = 2014.0,
+                            PublicationDate = "08 Jul 2016",
+                            Publisher = "Andrews McMeel Publishing",
+                            Quantity = 208,
+                            Title = "Milk and Honey"
+                        },
+                        new
+                        {
+                            Id = "4a941c80-1730-46d3-a",
+                            Author = "Yung Pueblo",
+                            BestsellerRank = 138,
+                            Country = "United States",
+                            Description = "From poet, meditator, and speaker Yung Pueblo, comes a collection of poetry and prose that explores the movement from self-love to unconditional love, the power of letting go, and the wisdom that comes when we truly try to know ourselves. It serves as a reminder to the reader that healing, transformation, and freedom are possible.",
+                            GenreTitle = "Poetry & Drama",
+                            ImageUrl = "https://localhost:5001/images/poetry&drama/Inward.jpg",
+                            Language = "English",
+                            Pages = 240,
+                            Price = 23.989999999999998,
+                            PublicationDate = "05 Aug 2020",
+                            Publisher = "Andrews McMeel Publishing",
+                            Quantity = 20,
+                            Title = "Inward"
+                        },
+                        new
+                        {
+                            Id = "a259b9a4-e157-4d56-b",
+                            Author = " George Orwell",
+                            BestsellerRank = 49,
+                            Country = "United Kingdom",
+                            Description = "Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities. Despite the police helicopters that hover and circle overhead, Winston and Julia begin to question the Party; they are drawn towards conspiracy. Yet Big Brother will not tolerate dissent - even in the mind. For those with original thoughts they invented Room 101. . .",
+                            GenreTitle = "Thriller",
+                            ImageUrl = "https://localhost:5001/images/thriller/1984.jpg",
+                            Language = "English",
+                            Pages = 336,
+                            Price = 15.289999999999999,
+                            PublicationDate = "01 Oct 2008",
+                            Publisher = " Penguin Books Ltd",
+                            Quantity = 0,
+                            Title = "1984 : The dystopian classic"
+                        },
+                        new
+                        {
+                            Id = "968793e7-7542-4c76-8",
+                            Author = "George Orwell",
+                            BestsellerRank = 77,
+                            Country = "United Kingdom",
+                            Description = "Mr Jones of Manor Farm is so lazy and drunken that one day he forgets to feed his livestock. The ensuing rebellion under the leadership of the pigs Napoleon and Snowball leads to the animals taking over the farm. Vowing to eliminate the terrible inequities of the farmyard, the renamed Animal Farm is organised to benefit all who walk on four legs. But as time passes, the ideals of the rebellion are corrupted, then forgotten. And something new and unexpected emerges. . .",
+                            GenreTitle = "Thriller",
+                            ImageUrl = "https://localhost:5001/images/thriller/AnimalFarm.jpg",
+                            Language = "English",
+                            Pages = 112,
+                            Price = 23.149999999999999,
+                            PublicationDate = "01 Oct 2008",
+                            Publisher = "Penguin Books Ltd",
+                            Quantity = 20,
+                            Title = "Animal Farm : The dystopian classic"
+                        },
+                        new
+                        {
+                            Id = "41c1ee21-6481-47f4-8",
+                            Author = "Andy Weir",
+                            BestsellerRank = 980,
+                            Country = "United Kingdom",
+                            Description = "Jazz Bashara is one of the criminals. She lives in a poor area of Artemis and subsidises her work as a porter with smuggling contraband onto the moon. But it's not enough.So when she's offered the chance to make a lot of money she jumps at it. But though planning a crime in 1/6th gravity may be more fun, it's also a lot more dangerous.When you live on the moon, of course you have a dark side...",
+                            GenreTitle = "Science Fiction",
+                            ImageUrl = "https://localhost:5001/images/fiction/Artemis.jpg",
+                            Language = "English",
+                            Pages = 320,
+                            Price = 21.66,
+                            PublicationDate = "12 Jul 2018",
+                            Publisher = "Cornerstone",
+                            Quantity = 2,
+                            Title = "Artemis"
+                        },
+                        new
+                        {
+                            Id = "73a67b77-d802-4538-a",
+                            Author = "Orson Scott Card",
+                            BestsellerRank = 461,
+                            Country = "United States",
+                            Description = "Ender's Game is the classic Hugo and Nebula award-winning science fiction novel of a young boy's recruitment into the midst of an interstellar war. In order to develop a secure defense against a hostile alien race's next attack, government agencies breed child geniuses and train them as soldiers. A brilliant young boy, Andrew Ender Wiggin lives with his kind but distant parents, his sadistic brother Peter, and the person he loves more than anyone else, his sister Valentine. Peter and Valentine were candidates for the soldier-training program but didn't make the cut--young Ender is the Wiggin drafted to the orbiting Battle School for rigorous military training. Ender's skills make him a leader in school and respected in the Battle Room, where children play at mock battles in zero gravity. Yet growing up in an artificial community of young soldiers Ender suffers greatly from isolation, rivalry from his peers, pressure from the adult teachers, and an unsettling fear of the alien invaders. His psychological battles include loneliness, fear that he is becoming like the cruel brother he remembers, and fanning the flames of devotion to his beloved sister. ",
+                            GenreTitle = "Science Fiction",
+                            ImageUrl = "https://localhost:5001/images/fiction/EndersGame.jpg",
+                            Language = "English",
+                            Pages = 375,
+                            Price = 18.850000000000001,
+                            PublicationDate = "30 Nov 1998",
+                            Publisher = "Tor Books",
+                            Quantity = 3,
+                            Title = "Ender's Game"
+                        },
+                        new
+                        {
+                            Id = "9a8122c3-2fe3-4305-a",
+                            Author = "Cixin Liu ",
+                            BestsellerRank = 166,
+                            Country = " United Kingdom",
+                            Description = "Earth enjoys unprecedented prosperity due to the infusion of Trisolaran knowledge and, with human science advancing and the Trisolarans adopting Earth culture, it seems that the two civilizations can co-exist peacefully as equals without the terrible threat of mutually assured annihilation. But peace has made humanity complacent.",
+                            GenreTitle = "Science Fiction",
+                            ImageUrl = "https://localhost:5001/images/fiction/DeathsEnd.jpg",
+                            Language = "English",
+                            Pages = 608,
+                            Price = 27.5,
+                            PublicationDate = "04 May 2017",
+                            Publisher = "Head of Zeus",
+                            Quantity = 20,
+                            Title = "Death's End"
                         });
                 });
 
@@ -270,43 +578,37 @@ namespace BookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b7fe98c1-2d3b-4b2b-a",
+                            Id = "ca8a4bb8-ce3a-4d53-8",
                             Description = "All Fiction Books",
-                            Title = "Fiction"
+                            Title = "Science Fiction"
                         },
                         new
                         {
-                            Id = "09f98af0-2c07-4a23-8",
-                            Description = "All Fantasy Books",
-                            Title = "Fantasy"
-                        },
-                        new
-                        {
-                            Id = "9fac31ce-1388-433c-8",
+                            Id = "7ef4182c-f476-4a7d-8",
                             Description = "All Romance Books",
                             Title = "Romance"
                         },
                         new
                         {
-                            Id = "65c420c0-8ca0-418b-a",
+                            Id = "5f11631e-1043-4005-9",
                             Description = "All Horror  Books",
                             Title = "Horror"
                         },
                         new
                         {
-                            Id = "3c7d64b5-e7a5-435f-9",
+                            Id = "e0059d39-df26-4dc9-8",
                             Description = "All Poetry & Drama Books",
                             Title = "Poetry & Drama"
                         },
                         new
                         {
-                            Id = "d01ab63e-2416-4d3b-b",
+                            Id = "4e65b96e-763b-400c-9",
                             Description = "All Thriller Books",
-                            Title = "Thriller "
+                            Title = "Thriller"
                         },
                         new
                         {
-                            Id = "804bfc7e-2732-4f73-9",
+                            Id = "85a631c3-12aa-45ea-b",
                             Description = "All Children's Books Books",
                             Title = "Children's Books"
                         });

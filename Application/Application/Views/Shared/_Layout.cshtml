@@ -9,10 +9,11 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/stylesheet.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm @*navbar-light bg-white*@ border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Book Store</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -22,16 +23,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Genre" asp-action="SearchByGenres">Books</a>
+                            <a class="nav-link " asp-area="" asp-controller="Genre" asp-action="SearchByGenres">Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
                     </ul>
                     <a href="#">
@@ -48,12 +49,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer ">
         <div class="container">
-            &copy; 2021 - Application - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>- <a asp-area="" asp-controller="Home" asp-action="About">About</a>
-                <a href="#"><i class="icon-facebook-sign"></i></a>
-                <a href="#"><i class="icon-twitter"></i></a>
-                <a href="#"><i class="icon-instagram"></i></a>
+                &copy; 2021 - Application - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>- <a asp-area="" asp-controller="Home" asp-action="About">About</a>   
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/f9a6115591.js" crossorigin="anonymous"></script>

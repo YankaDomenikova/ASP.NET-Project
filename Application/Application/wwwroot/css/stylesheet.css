@@ -1,0 +1,90 @@
+﻿/*navbar*/ 
+.navbar {
+    background-color: black;
+    height: 72px;
+}
+
+.navbar-brand {
+    color: #faf88e;
+    font-size: 30px;
+    padding: 0 25px;
+}
+
+.navbar-brand:hover{
+    color: #faf88e;
+}
+
+a.nav-link {
+    color: #faf88e;
+    font-size: 19px;
+}
+
+a.nav-link:hover {
+    color: #cc1555;
+}
+
+a .icon-shopping-cart {
+    color: #faf88e;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+a .icon-shopping-cart:hover {
+        color: #cc1555;
+}
+
+
+a .icon {
+    color: #faf88e;
+    font-size: 25px;
+    margin: 5px 10px;
+}
+
+
+/*footer*/
+.footer {
+    background-color: black;
+    height: 72px;
+    color: #faf88e;
+    font-size: 16px;
+}
+
+footer a {
+    color: #faf88e;
+}
+
+footer a:hover {
+    color: #cc1555;
+    text-decoration: none;
+}
+
+
+/*index page*/
+.index {
+    margin-top: 55px;
+}
+h1.welcome{
+    font-size: 65px;
+}
+.img-book {
+    height: 250px;
+    width: auto;
+}
+
+p a.search {
+    color: black;
+    font-size: 22px;
+}
+
+p a.search i{
+    padding: 5px;
+}
+
+p a.search:hover,
+p a.search i:hover {
+     color: #c4c108;
+     font-size: 22px;
+     text-decoration: none
+}
+
+/*Search by genre*/

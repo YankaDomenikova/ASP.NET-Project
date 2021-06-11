@@ -2,8 +2,15 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+<div class="container index">
+    <div class=" text-center">
+        <h1 class="welcome">Welcome</h1>
+        <img class="img-book" src="~/book.jpg" alt="Alternate Text" />
+        <p>
+            <a class="search" asp-area="" asp-controller="Genre" asp-action="SearchByGenres">
+                <i class="fa fa-search" aria-hidden="true"></i>Search Books
+            </a>
+        </p>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

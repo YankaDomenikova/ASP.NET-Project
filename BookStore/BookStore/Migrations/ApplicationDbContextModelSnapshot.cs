@@ -80,7 +80,7 @@ namespace BookStore.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d3bcf259-1578-4f49-b",
+                            Id = "f34a9cc8-cda2-4ab5-b",
                             Author = "Diana Gabaldon",
                             BestsellerRank = 132,
                             Country = "United States",
@@ -97,7 +97,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "aac45d7d-b6ca-44a4-8",
+                            Id = "fca59e31-e503-4b33-a",
                             Author = "Lucinda Riley",
                             BestsellerRank = 391,
                             Country = "United Kingdom",
@@ -114,7 +114,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "01ea198d-0362-47ba-b",
+                            Id = "a555fcc8-e5a2-4877-a",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 11,
                             Country = "United States",
@@ -131,7 +131,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "dd3a9329-108d-42d5-a",
+                            Id = "bf12955a-3a2c-4ea2-b",
                             Author = "Colleen Hoover",
                             BestsellerRank = 121,
                             Country = "United Kingdom",
@@ -148,7 +148,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "6fab5d23-8d68-4f27-a",
+                            Id = "555d9e88-1eaa-41c4-8",
                             Author = "Lucinda Riley",
                             BestsellerRank = 264,
                             Country = " United Kingdom",
@@ -165,7 +165,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "d62332ac-db52-4c1a-8",
+                            Id = "e0dfef5a-d8ad-432c-9",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 168,
                             Country = "United States",
@@ -182,7 +182,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "06f4a297-4c64-444f-a",
+                            Id = "8a148a0c-25a0-43a6-a",
                             Author = "Morgan Rogers",
                             BestsellerRank = 280,
                             Country = "United States",
@@ -199,7 +199,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "c5ba0798-68f4-4991-b",
+                            Id = "180cd933-df31-4261-9",
                             Author = "Sally Rooney",
                             BestsellerRank = 141,
                             Country = "United Kingdom",
@@ -216,7 +216,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "eab713df-7a0e-4657-8",
+                            Id = "590aa07f-ac9c-47c0-8",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 149,
                             Country = "United Kingdom",
@@ -233,7 +233,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "d1f76c7a-8383-4c3b-b",
+                            Id = "70fff19f-a8bb-466c-a",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 264,
                             Country = "United Kingdom",
@@ -250,7 +250,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "5ba9c349-f416-40f6-9",
+                            Id = "467dd8c7-6d02-4404-a",
                             Author = "Stephen King",
                             BestsellerRank = 156,
                             Country = "United States",
@@ -267,7 +267,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "cd4d719e-e781-43a0-b",
+                            Id = "b94d670e-7ab7-41fd-9",
                             Author = "Stephen King",
                             BestsellerRank = 160,
                             Country = "United Kingdom",
@@ -284,7 +284,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "dd9751c9-3bbd-47b9-8",
+                            Id = "8a32e0aa-e278-4166-8",
                             Author = "Shirley Jackson",
                             BestsellerRank = 579,
                             Country = "United Kingdom",
@@ -301,7 +301,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "a4fa28fa-deb6-4b6a-b",
+                            Id = "baeee081-6da7-42bc-b",
                             Author = "Bret Easton Ellis",
                             BestsellerRank = 303,
                             Country = "United States",
@@ -318,7 +318,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "ca570351-f3ca-403b-9",
+                            Id = "32001bfb-3c91-4095-9",
                             Author = " Mary Shelley",
                             BestsellerRank = 491,
                             Country = "United Kingdom",
@@ -335,7 +335,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "583e8f45-2706-4030-9",
+                            Id = "9b195045-78d4-405e-8",
                             Author = "Bram Stoker",
                             BestsellerRank = 342,
                             Country = " United Kingdom",
@@ -352,7 +352,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "60b82636-efb3-4419-8",
+                            Id = "cba6d2bb-d2d5-43e8-9",
                             Author = "John Fowles",
                             BestsellerRank = 604,
                             Country = "United Kingdom",
@@ -369,7 +369,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "8115ef8e-6561-411f-9",
+                            Id = "aad155eb-5dab-4cd2-b",
                             Author = "Ed Bryan",
                             BestsellerRank = 918,
                             Country = "United Kingdom",
@@ -386,7 +386,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "293f1b61-3ad2-4d08-8",
+                            Id = "532977b6-83a6-4050-9",
                             Author = "Ed Bryan",
                             BestsellerRank = 651,
                             Country = "United Kingdom",
@@ -403,7 +403,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "36a26a86-538d-447c-a",
+                            Id = "5dbfe17a-821a-42cd-b",
                             Author = "Nosy Crow",
                             BestsellerRank = 781,
                             Country = "United Kingdom",
@@ -420,7 +420,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "a839466f-34bb-4e0b-9",
+                            Id = "5b480a83-0e25-4329-a",
                             Author = "Yung Pueblo",
                             BestsellerRank = 152,
                             Country = "United States",
@@ -437,7 +437,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "3270ace6-237c-409c-8",
+                            Id = "d91d120b-39fe-49b8-a",
                             Author = "Rupi Kaur",
                             BestsellerRank = 332,
                             Country = "United States",
@@ -454,7 +454,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "4a941c80-1730-46d3-a",
+                            Id = "04aff6c7-a12c-4c7e-9",
                             Author = "Yung Pueblo",
                             BestsellerRank = 138,
                             Country = "United States",
@@ -471,7 +471,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "a259b9a4-e157-4d56-b",
+                            Id = "509e1da4-5568-4bf5-8",
                             Author = " George Orwell",
                             BestsellerRank = 49,
                             Country = "United Kingdom",
@@ -488,7 +488,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "968793e7-7542-4c76-8",
+                            Id = "e084d2c8-3481-4e2e-b",
                             Author = "George Orwell",
                             BestsellerRank = 77,
                             Country = "United Kingdom",
@@ -505,7 +505,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "41c1ee21-6481-47f4-8",
+                            Id = "9533572e-fee5-40fc-a",
                             Author = "Andy Weir",
                             BestsellerRank = 980,
                             Country = "United Kingdom",
@@ -522,7 +522,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "73a67b77-d802-4538-a",
+                            Id = "ddb8220f-258e-4142-8",
                             Author = "Orson Scott Card",
                             BestsellerRank = 461,
                             Country = "United States",
@@ -539,7 +539,7 @@ namespace BookStore.Migrations
                         },
                         new
                         {
-                            Id = "9a8122c3-2fe3-4305-a",
+                            Id = "41c1d235-eee8-4555-8",
                             Author = "Cixin Liu ",
                             BestsellerRank = 166,
                             Country = " United Kingdom",
@@ -576,40 +576,55 @@ namespace BookStore.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ca8a4bb8-ce3a-4d53-8",
+                            Id = "ab9e80d0-8e05-4eb3-b",
                             Description = "All Fiction Books",
                             Title = "Science Fiction"
                         },
                         new
                         {
-                            Id = "7ef4182c-f476-4a7d-8",
+                            Id = "e284fd0b-0e63-4f2f-a",
                             Description = "All Romance Books",
                             Title = "Romance"
                         },
                         new
                         {
-                            Id = "5f11631e-1043-4005-9",
+                            Id = "8454f1f1-025b-4b49-a",
                             Description = "All Horror  Books",
                             Title = "Horror"
                         },
                         new
                         {
-                            Id = "e0059d39-df26-4dc9-8",
+                            Id = "8d712bbb-7f68-4189-a",
                             Description = "All Poetry & Drama Books",
                             Title = "Poetry & Drama"
                         },
                         new
                         {
-                            Id = "4e65b96e-763b-400c-9",
+                            Id = "4e11e913-296d-44f1-9",
                             Description = "All Thriller Books",
                             Title = "Thriller"
                         },
                         new
                         {
-                            Id = "85a631c3-12aa-45ea-b",
+                            Id = "096dfd7d-8894-4f0c-a",
                             Description = "All Children's Books Books",
                             Title = "Children's Books"
                         });
+                });
+
+            modelBuilder.Entity("BookStore.Models.Order", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -675,6 +690,10 @@ namespace BookStore.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -726,6 +745,8 @@ namespace BookStore.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -812,6 +833,21 @@ namespace BookStore.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("BookStore.Models.User", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("FirstName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("LastName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasDiscriminator().HasValue("User");
+                });
+
             modelBuilder.Entity("BookStore.Models.Book", b =>
                 {
                     b.HasOne("BookStore.Models.Genre", "Genre")
@@ -819,6 +855,15 @@ namespace BookStore.Migrations
                         .HasForeignKey("GenreId");
 
                     b.Navigation("Genre");
+                });
+
+            modelBuilder.Entity("BookStore.Models.Order", b =>
+                {
+                    b.HasOne("BookStore.Models.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -875,6 +920,11 @@ namespace BookStore.Migrations
             modelBuilder.Entity("BookStore.Models.Genre", b =>
                 {
                     b.Navigation("Books");
+                });
+
+            modelBuilder.Entity("BookStore.Models.User", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

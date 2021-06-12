@@ -90,7 +90,9 @@ a i {
     margin: 5px;
 }
 
-/*Search by genre*/
+/*Search by genre
+-------------------------------------------------- */
+
 div.genre-heading h1 {
     font-size: 50px;
     margin-top: 45px;
@@ -131,7 +133,9 @@ h1 i {
 }
 
 
-/*Book*/
+/*Book
+-------------------------------------------------- */
+
 .card {
     position: relative;
     border: 1px solid #dcd909;
@@ -167,7 +171,9 @@ h1 i {
     font-size: 18px;
 }
 
-/*Book information*/
+
+/*Book information
+-------------------------------------------------- */
 
 .item-wrap,
 .book-checkout {
@@ -199,7 +205,7 @@ h1 i {
 
 .book-checkout{
     position: relative;
-    height: 270px;
+    height: 260px;
     width: 260px;
 }
 
@@ -211,11 +217,11 @@ h1 i {
 
 .book-qty {
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .free-delivery-text {
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 18px;
     font-style: italic;
 }
@@ -223,7 +229,7 @@ h1 i {
 div.cart-btn a.btn {
     position: absolute;
     background-color: #dcd909;
-    bottom: 15px;
+    bottom: 20px;
     left: 15px;
     width: 87%;
     color: #fffff8;
@@ -256,3 +262,35 @@ img.img-book-small {
 span.bold-text {
     font-weight: 500;
 }
+
+/*Disabled button
+-------------------------------------------------- */
+div.cart-btn a.disabled{
+    background-color: grey;
+}
+
+/*Privacy page
+-------------------------------------------------- */
+div.privacy{
+    margin-top: 100px;
+}
+
+hr.pr-line-one{
+    background-color: #cc1555;
+    color: #cc1555;
+    width: 55%;
+    height: 2px;
+}
+
+hr.pr-line-two {
+    background-color: #cc1555;
+    color: #cc1555;
+    width: 30%;
+    height: 2px;
+}
+
+/*About page
+-------------------------------------------------- */
+
+/*Register
+-------------------------------------------------- */

@@ -1,25 +1,29 @@
 ﻿@model List<GenreViewModel>
 
-@{ 
+@{
     ViewData["Title"] = "Search by Genre";
 }
 
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12 text-center ">
-            <h1>Search by Genre</h1>
+        <div class="col-md-12">
+            <div class="genre-heading text-center">
+                <h1><i class="fa fa-search" aria-hidden="true"></i>Search by Genre</h1>
+            </div>
         </div>
     </div>
-    <div class="row d-flex justify-content-center align-items-center text-center ">
-        @foreach (GenreViewModel genre in Model)
-        {
-            <div class="col-md-3 ">
-                <a class="genre-link" asp-controller="Genre" asp-action="GetBookByGenre" asp-route-title="@genre.Title">@genre.Title</a>
-            </div>
-        }
-        <div class="col-md-3 ">
-            <a class="genre-link" asp-controller="Book" asp-action="AllBooks">All Books</a>
-        </div>
+    <div class="row @*d-flex justify-content-center align-items-center*@ text-center">
+        <ul>
+            @foreach (GenreViewModel genre in Model)
+            {
+                <li class="genre-item">
+                    <a class="genre-link" asp-controller="Genre" asp-action="GetBookByGenre" asp-route-title="@genre.Title">@genre.Title</a>
+                </li>
+            }
+            <li class="genre-item">
+                <a class="genre-link" asp-controller="Book" asp-action="AllBooks">All Books</a>
+            </li>
+        </ul>
     </div>
 </div>

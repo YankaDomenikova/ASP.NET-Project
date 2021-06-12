@@ -1,10 +1,8 @@
 ﻿@model BookViewModel
 
-
 @{
     ViewData["Title"] = Model.Title;
 }
-
 
 @*<div class="container item-wrap">
     <div class="row">
@@ -50,14 +48,15 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 item-wrap">
             <div class="book-img">
                 <img src="@Model.ImageUrl" alt="Image not found" />
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 item-wrap">
             <div class="book-title">
                 <h2>@Model.Title</h2>
+                <hr class="line" />
             </div>
             <div class="book-author">
                 <p class="book-author">By (author) @Model.Author</p>
@@ -75,7 +74,7 @@
                     <partial name="_BookQuantity" model="@Model" />
                 </div>
                 <div class="free-delivery-text">
-                    <p>Free delivery worldwide</p>
+                    <p><i class="icon-truck"></i>Free delivery worldwide</p>
                 </div>
                 <div class="cart-btn">
                     <partial name="_AddToCartButton" model="@Model" />
@@ -83,23 +82,23 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="book-details">
-                <p>Publication date: @Model.PublicationDate</p>
-                <p>Publisher: @Model.Publisher</p>
-                <p>Publication country: @Model.Country</p>
+    <div class="row book-details">
+        <div class="col-md-5">
+            <div class="book-col">
+                <p><span class="bold-text">Publication date: </span>@Model.PublicationDate</p>
+                <p><span class="bold-text">Publisher: </span>@Model.Publisher</p>
+                <p><span class="bold-text">Publication country: </span>@Model.Country</p>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="book-details">
-                <p>Pages: @Model.Pages</p>
-                <p>Language: @Model.Language</p>
-                <p>Bestsellers rank: @Model.BestsellerRank</p>
+        <div class="col-md-5">
+            <div class="book-col">
+                <p><span class="bold-text">Pages: </span> @Model.Pages</p>
+                <p><span class="bold-text">Language: </span> @Model.Language</p>
+                <p><span class="bold-text">Bestsellers rank: </span> @Model.BestsellerRank</p>
             </div>
+        </div>
+        <div class="col-md-2">
+            <img class="img-book-small" src="~/book2.jpg" alt="Alternate Text" />
         </div>
     </div>
 </div>

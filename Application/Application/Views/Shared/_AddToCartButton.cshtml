@@ -2,9 +2,13 @@
 
 @if (Model.Quantity == 0)
 {
-    <a class="btn disabled">Add to cart</a>
+    <div class="cart-btn">
+        <a class="btn disabled">Add to cart</a>
+    </div>
 }
 else
 {
-    <a class="btn" asp-controller="" asp-action="" asp-route-id=>Add to cart</a>
+    <div class="cart-btn">
+        <a class="btn" asp-controller="Cart" asp-action="AddToCart">Add to cart</a>
+    </div>
 }

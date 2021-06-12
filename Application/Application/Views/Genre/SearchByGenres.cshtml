@@ -7,19 +7,19 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12 text-center search-heading">
+        <div class="col-md-12 text-center ">
             <h1>Search by Genre</h1>
         </div>
     </div>
     <div class="row d-flex justify-content-center align-items-center text-center ">
         @foreach (GenreViewModel genre in Model)
         {
-            <div class="col-md-3 genre-link">
-                <a class="" asp-controller="Genre" asp-action="GetBookByGenre" asp-route-title="@genre.Title">@genre.Title</a>
+            <div class="col-md-3 ">
+                <a class="genre-link" asp-controller="Genre" asp-action="GetBookByGenre" asp-route-title="@genre.Title">@genre.Title</a>
             </div>
         }
-        <div class="col-md-3 genre-link">
-            <a class="" asp-controller="Book" asp-action="AllBooks">All Books</a>
+        <div class="col-md-3 ">
+            <a class="genre-link" asp-controller="Book" asp-action="AllBooks">All Books</a>
         </div>
     </div>
 </div>

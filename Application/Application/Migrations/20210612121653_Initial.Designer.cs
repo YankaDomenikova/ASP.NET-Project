@@ -4,14 +4,16 @@ using Application.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Application.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210612121653_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,7 +80,7 @@ namespace Application.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1201134c-5acb-48ac-9",
+                            Id = "dc67d511-f583-419c-8",
                             Author = "Diana Gabaldon",
                             BestsellerRank = 132,
                             Country = "United States",
@@ -95,7 +97,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "c24d3ec2-0e24-434e-9",
+                            Id = "708b91fc-ab7e-43fb-b",
                             Author = "Lucinda Riley",
                             BestsellerRank = 391,
                             Country = "United Kingdom",
@@ -112,7 +114,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "f07dbf2a-c161-44f4-a",
+                            Id = "b8c68ba1-d710-4b85-b",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 11,
                             Country = "United States",
@@ -129,7 +131,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "23ec139e-5dd0-4ac7-b",
+                            Id = "bb6d0885-7159-445c-8",
                             Author = "Colleen Hoover",
                             BestsellerRank = 121,
                             Country = "United Kingdom",
@@ -146,7 +148,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "a470ccbe-f021-4ac4-8",
+                            Id = "22cf7588-fad8-494f-8",
                             Author = "Lucinda Riley",
                             BestsellerRank = 264,
                             Country = " United Kingdom",
@@ -163,7 +165,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "fd8dadb1-dba7-47b8-b",
+                            Id = "474f331b-0598-4f19-a",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 168,
                             Country = "United States",
@@ -180,7 +182,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "2f34a650-15a8-4d1e-9",
+                            Id = "f346f012-e38d-4511-9",
                             Author = "Morgan Rogers",
                             BestsellerRank = 280,
                             Country = "United States",
@@ -197,7 +199,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "c14d6552-d0ed-4063-8",
+                            Id = "5dbe717b-cc81-450f-b",
                             Author = "Sally Rooney",
                             BestsellerRank = 141,
                             Country = "United Kingdom",
@@ -214,7 +216,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "8818380f-fc8f-4bea-9",
+                            Id = "0642d02b-b3d4-4f9f-8",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 149,
                             Country = "United Kingdom",
@@ -231,7 +233,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "b500d45d-45c8-43fe-b",
+                            Id = "7862379f-afe7-4c13-9",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 264,
                             Country = "United Kingdom",
@@ -248,7 +250,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "0b7a37d5-1867-4d6d-a",
+                            Id = "a8b27ce6-ed50-4655-b",
                             Author = "Stephen King",
                             BestsellerRank = 156,
                             Country = "United States",
@@ -265,7 +267,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "5f0ae6fb-6503-4f9c-9",
+                            Id = "4fd2e9b2-dcc7-4c7e-9",
                             Author = "Stephen King",
                             BestsellerRank = 160,
                             Country = "United Kingdom",
@@ -282,7 +284,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "0b320695-1a34-4554-a",
+                            Id = "24791bbe-9e41-4b76-9",
                             Author = "Shirley Jackson",
                             BestsellerRank = 579,
                             Country = "United Kingdom",
@@ -299,7 +301,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "b1a21f10-15cf-4ac3-8",
+                            Id = "475e1003-7fee-4b66-8",
                             Author = "Bret Easton Ellis",
                             BestsellerRank = 303,
                             Country = "United States",
@@ -316,7 +318,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "92cbb82a-4689-4c5a-a",
+                            Id = "794da24c-10d6-4379-9",
                             Author = " Mary Shelley",
                             BestsellerRank = 491,
                             Country = "United Kingdom",
@@ -333,7 +335,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "332c6921-174e-4cb9-8",
+                            Id = "18cf6e95-428d-4f5f-8",
                             Author = "Bram Stoker",
                             BestsellerRank = 342,
                             Country = " United Kingdom",
@@ -350,7 +352,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "d90de4c6-66e0-4e8f-a",
+                            Id = "a82252b6-cbde-4832-9",
                             Author = "John Fowles",
                             BestsellerRank = 604,
                             Country = "United Kingdom",
@@ -367,7 +369,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "fbec18c2-e141-4adc-8",
+                            Id = "e1a60e65-6b56-43b2-a",
                             Author = "Ed Bryan",
                             BestsellerRank = 918,
                             Country = "United Kingdom",
@@ -384,7 +386,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "6bad84e8-40fc-407e-a",
+                            Id = "950147e5-e4bd-46b9-8",
                             Author = "Ed Bryan",
                             BestsellerRank = 651,
                             Country = "United Kingdom",
@@ -401,7 +403,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "29cd2764-d977-4bef-8",
+                            Id = "64c149a8-72bd-49bb-b",
                             Author = "Nosy Crow",
                             BestsellerRank = 781,
                             Country = "United Kingdom",
@@ -418,7 +420,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "f57eb8fd-0d3a-4bf9-9",
+                            Id = "6d16aa35-7399-4712-8",
                             Author = "Yung Pueblo",
                             BestsellerRank = 152,
                             Country = "United States",
@@ -435,7 +437,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "fce2d9f7-f8df-4fe4-9",
+                            Id = "a3055781-5d12-460c-a",
                             Author = "Rupi Kaur",
                             BestsellerRank = 332,
                             Country = "United States",
@@ -452,7 +454,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "e2723d86-32f9-49d8-9",
+                            Id = "8abe5310-eab7-4d26-8",
                             Author = "Yung Pueblo",
                             BestsellerRank = 138,
                             Country = "United States",
@@ -469,7 +471,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "934253bd-f1ba-4708-8",
+                            Id = "2c6e2d08-6f0e-48b7-a",
                             Author = " George Orwell",
                             BestsellerRank = 49,
                             Country = "United Kingdom",
@@ -486,7 +488,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "11d8f3f4-f34f-428b-b",
+                            Id = "726d7cd2-f742-47c4-8",
                             Author = "George Orwell",
                             BestsellerRank = 77,
                             Country = "United Kingdom",
@@ -503,7 +505,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "966e6f74-b405-4c70-a",
+                            Id = "a734d89a-9b95-499c-a",
                             Author = "Andy Weir",
                             BestsellerRank = 980,
                             Country = "United Kingdom",
@@ -520,7 +522,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "aa8594fd-dece-4dd8-b",
+                            Id = "d00a7e4c-ce07-4ce2-a",
                             Author = "Orson Scott Card",
                             BestsellerRank = 461,
                             Country = "United States",
@@ -537,7 +539,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "81dfe19a-85fb-4f37-8",
+                            Id = "60381b65-a8cc-41bc-b",
                             Author = "Cixin Liu ",
                             BestsellerRank = 166,
                             Country = " United Kingdom",
@@ -552,39 +554,6 @@ namespace Application.Migrations
                             Quantity = 20,
                             Title = "Death's End"
                         });
-                });
-
-            modelBuilder.Entity("Application.Models.Cart", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Carts");
-                });
-
-            modelBuilder.Entity("Application.Models.CartItem", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("BookId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("CartId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookId");
-
-                    b.HasIndex("CartId");
-
-                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("Application.Models.Genre", b =>
@@ -607,70 +576,40 @@ namespace Application.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9390a8ca-c6de-492f-b",
+                            Id = "46529965-a401-4b28-8",
                             Description = "All Fiction Books",
                             Title = "Science Fiction"
                         },
                         new
                         {
-                            Id = "e6aa4b32-6128-4a40-8",
+                            Id = "b6c28c85-d809-40fc-b",
                             Description = "All Romance Books",
                             Title = "Romance"
                         },
                         new
                         {
-                            Id = "7e6f69f0-eee7-413c-8",
+                            Id = "1fa0f9db-b42e-45f7-b",
                             Description = "All Horror  Books",
                             Title = "Horror"
                         },
                         new
                         {
-                            Id = "360ef053-f356-43f8-a",
+                            Id = "b95da310-eccd-4e19-9",
                             Description = "All Poetry & Drama Books",
                             Title = "Poetry & Drama"
                         },
                         new
                         {
-                            Id = "56bf68c1-8dea-4a26-b",
+                            Id = "53a6407e-1377-4967-9",
                             Description = "All Thriller Books",
                             Title = "Thriller"
                         },
                         new
                         {
-                            Id = "461e5a68-a1e0-44b8-9",
+                            Id = "8aaf3ffb-7a1b-4b36-b",
                             Description = "All Children's Books Books",
                             Title = "Children's Books"
                         });
-                });
-
-            modelBuilder.Entity("Application.Models.Order", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Address")
-                        .HasMaxLength(75)
-                        .HasColumnType("nvarchar(75)");
-
-                    b.Property<string>("Country")
-                        .HasMaxLength(55)
-                        .HasColumnType("nvarchar(55)");
-
-                    b.Property<double>("OrderTotal")
-                        .HasColumnType("float");
-
-                    b.Property<string>("State")
-                        .HasMaxLength(55)
-                        .HasColumnType("nvarchar(55)");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -736,10 +675,6 @@ namespace Application.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -791,8 +726,6 @@ namespace Application.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -879,21 +812,6 @@ namespace Application.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Application.Models.User", b =>
-                {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
-
-                    b.Property<string>("FirstName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("LastName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasDiscriminator().HasValue("User");
-                });
-
             modelBuilder.Entity("Application.Models.Book", b =>
                 {
                     b.HasOne("Application.Models.Genre", "Genre")
@@ -901,30 +819,6 @@ namespace Application.Migrations
                         .HasForeignKey("GenreId");
 
                     b.Navigation("Genre");
-                });
-
-            modelBuilder.Entity("Application.Models.CartItem", b =>
-                {
-                    b.HasOne("Application.Models.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("BookId");
-
-                    b.HasOne("Application.Models.Cart", "Cart")
-                        .WithMany("CartItems")
-                        .HasForeignKey("CartId");
-
-                    b.Navigation("Book");
-
-                    b.Navigation("Cart");
-                });
-
-            modelBuilder.Entity("Application.Models.Order", b =>
-                {
-                    b.HasOne("Application.Models.User", "User")
-                        .WithMany("Orders")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -978,19 +872,9 @@ namespace Application.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Application.Models.Cart", b =>
-                {
-                    b.Navigation("CartItems");
-                });
-
             modelBuilder.Entity("Application.Models.Genre", b =>
                 {
                     b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("Application.Models.User", b =>
-                {
-                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

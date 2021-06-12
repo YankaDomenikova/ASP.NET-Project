@@ -78,6 +78,64 @@ a.search {
     color: black;
     font-size: 22px;
 }
+a.search:hover {
+    color: #cc1555;
+    text-decoration: none;
+}
 
-/* Search by genre
--------------------------------------------------- */
+/*Book*/
+.card {
+    position: relative;
+    border: 1px solid #dcd909;
+    margin: 10px;
+    height: 490px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card img {
+     height: 245px;
+     width: 185px;
+     margin: auto;
+     margin-top: 15px;
+}
+
+.card .card-title,
+.card p{
+     margin: 5px;
+}
+
+.card p{
+    font-size: 17px;
+}
+
+.card .btn {
+    position: absolute;
+    left: 11px;
+    bottom: 15px;
+    background-color: #faf88e;
+    color: black;
+    width: 90%;
+    font-size: 18px;
+}
+
+/*Book information*/
+
+div.item-wrap {
+    border: 1px solid #faf88e;
+}
+
+/*img.book-img {
+    height: 470px;
+    margin: 10px 5px;
+}
+
+h2.book-title {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+p.book-author{
+    font-style: italic;
+    font-size: 16px;
+}*/

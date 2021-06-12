@@ -1,21 +1,35 @@
 ﻿@model BookViewModel
 
-<div class="container">
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+
+@*<div class="container item-wrap">
     <div class="row">
-            <div class="col-md-4">
-                <img src="@Model.ImageUrl" alt="Image not found" />
-            </div>
-            <div class="col-md-4">
-                <h2>@Model.Title</h2>
-                <p>By (author) @Model.Author</p>
-                <p>@Model.Description</p>
-            </div>
-            <div class="sol-md-4">
+        <div class="col-md-4">
+            <img class="book-img"src="@Model.ImageUrl" alt="Image not found" />
+        </div>
+        <div class="col-md-4">
+            <h2 class="book-title">@Model.Title</h2>
+            <p class="book-author">By (author) @Model.Author</p>
+            <p>@Model.Description</p>
+        </div>
+        <div class="sol-md-4">
+            <div class="book-price">
                 <p>$@Model.Price</p>
+            </div>
+            <div class="book-quantity">
                 <partial name="_BookQuantity" model="@Model" />
+            </div>
+            <div class="free-delivery-text">
                 <p>Free delivery worldwide</p>
+            </div>
+            <div class="cart-btn">
                 <partial name="_AddToCartButton" model="@Model" />
             </div>
+        </div>
     </div>
 </div>
 
@@ -29,7 +43,63 @@
         <div class="col-md-3">
             <p>Pages: @Model.Pages</p>
             <p>Language: @Model.Language</p>
-            <p>Bestsellers rank: @Model.BestsellerRank\</p>
+            <p>Bestsellers rank: @Model.BestsellerRank</p>
+        </div>
+    </div>
+</div>*@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="book-img">
+                <img src="@Model.ImageUrl" alt="Image not found" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="book-title">
+                <h2>@Model.Title</h2>
+            </div>
+            <div class="book-author">
+                <p class="book-author">By (author) @Model.Author</p>
+            </div>
+            <div class="book-description">
+                <p>@Model.Description</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="book-checkout">
+                <div class="book-price">
+                    <p>$@Model.Price</p>
+                </div>
+                <div class="book-qty">
+                    <partial name="_BookQuantity" model="@Model" />
+                </div>
+                <div class="free-delivery-text">
+                    <p>Free delivery worldwide</p>
+                </div>
+                <div class="cart-btn">
+                    <partial name="_AddToCartButton" model="@Model" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="book-details">
+                <p>Publication date: @Model.PublicationDate</p>
+                <p>Publisher: @Model.Publisher</p>
+                <p>Publication country: @Model.Country</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="book-details">
+                <p>Pages: @Model.Pages</p>
+                <p>Language: @Model.Language</p>
+                <p>Bestsellers rank: @Model.BestsellerRank</p>
+            </div>
         </div>
     </div>
 </div>

@@ -67,7 +67,7 @@ namespace Application.Data.Seed
                     GenreTitle = "Romance"
                     },
                 new Book {
-                    Title="Red, White & Royal Blue : A Novel",
+                    Title="Red, White & Royal Blue",
                     Author="Casey Mcquiston",
                     Description="What happens when America's First Son falls in love with the Prince of Wales? " +
                     "When his mother became President, Alex Claremont-Diaz was promptly cast as the American equivalent of a young royal. " +
@@ -360,7 +360,7 @@ namespace Application.Data.Seed
                     GenreTitle = "Horror"
                     },
                 new Book {
-                    Title="Fairy Tales: Snow White",
+                    Title="Snow White",
                     Author="Ed Bryan",
                     Description="When the wicked queen discovers that her stepdaughter, Snow White, is the most beautiful " +
                     "woman in the land, she orders the huntsman to kill her. But Snow White escapes and finds a wonderful " +
@@ -378,7 +378,7 @@ namespace Application.Data.Seed
                     GenreTitle = "Children's Books"
                     },
                 new Book {
-                    Title="Fairy Tales: Goldilocks and the Three Bears",
+                    Title="Goldilocks and the Three Bears",
                     Author="Ed Bryan",
                     Description="When Goldilocks gets lost in the woods, she finds herself at a cosy little cottage. She is delighted" +
                     " to find three bowls of porridge on the table, three chairs in the living room and some very bouncy beds in the " +
@@ -395,7 +395,7 @@ namespace Application.Data.Seed
                     GenreTitle = "Children's Books"
                     },
                 new Book {
-                    Title="Fairy Tales: Little Red Riding Hood",
+                    Title="Little Red Riding Hood",
                     Author="Nosy Crow",
                     Description="Little Red Riding Hood sets out into the forest to take a basket of goodies to her poorly grandma. " +
                     "Along the way, she adds to her stores, picking beautiful flowers, gathering fallen acorns and receiving a gift " +
@@ -437,7 +437,7 @@ namespace Application.Data.Seed
                     "in them because there is sweetness everywhere if you are just willing to look.",
                     Price=2014,
                     Quantity=208,
-                    ImageUrl="https://localhost:5001/images/poetry&drama/",
+                    ImageUrl="https://localhost:5001/images/poetry&drama/MilkandHoney.jpg",
                     Language="English",
                     Pages=208,
                     PublicationDate="08 Jul 2016",
@@ -464,7 +464,7 @@ namespace Application.Data.Seed
                     GenreTitle = "Poetry & Drama"
                     },
                 new Book {
-                    Title="1984 : The dystopian classic",
+                    Title="1984",
                     Author=" George Orwell",
                     Description="Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out " +
                     "from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that " +
@@ -483,7 +483,7 @@ namespace Application.Data.Seed
                     GenreTitle = "Thriller"
                     },
                 new Book {
-                    Title="Animal Farm : The dystopian classic",
+                    Title="Animal Farm",
                     Author="George Orwell",
                     Description="Mr Jones of Manor Farm is so lazy and drunken that one day he forgets to feed his livestock. " +
                     "The ensuing rebellion under the leadership of the pigs Napoleon and Snowball leads to the animals taking over the farm. " +
@@ -527,11 +527,7 @@ namespace Application.Data.Seed
                     "A brilliant young boy, Andrew Ender Wiggin lives with his kind but distant parents, his sadistic brother Peter, " +
                     "and the person he loves more than anyone else, his sister Valentine. Peter and Valentine were candidates for the " +
                     "soldier-training program but didn't make the cut--young Ender is the Wiggin drafted to the orbiting Battle School " +
-                    "for rigorous military training. Ender's skills make him a leader in school and respected in the Battle Room, where " +
-                    "children play at mock battles in zero gravity. Yet growing up in an artificial community of young soldiers Ender " +
-                    "suffers greatly from isolation, rivalry from his peers, pressure from the adult teachers, and an unsettling fear " +
-                    "of the alien invaders. His psychological battles include loneliness, fear that he is becoming like the cruel brother " +
-                    "he remembers, and fanning the flames of devotion to his beloved sister. ",
+                    "for rigorous military training.",
                     Price=18.85,
                     Quantity=3,
                     ImageUrl="https://localhost:5001/images/fiction/EndersGame.jpg",

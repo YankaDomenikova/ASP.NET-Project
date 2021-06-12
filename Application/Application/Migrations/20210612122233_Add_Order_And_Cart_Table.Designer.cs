@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210611152705_Initial")]
-    partial class Initial
+    [Migration("20210612122233_Add_Order_And_Cart_Table")]
+    partial class Add_Order_And_Cart_Table
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -80,7 +80,7 @@ namespace Application.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "44b2fbfb-09cd-474e-8",
+                            Id = "1201134c-5acb-48ac-9",
                             Author = "Diana Gabaldon",
                             BestsellerRank = 132,
                             Country = "United States",
@@ -97,7 +97,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "88c95c2a-9e6d-4073-b",
+                            Id = "c24d3ec2-0e24-434e-9",
                             Author = "Lucinda Riley",
                             BestsellerRank = 391,
                             Country = "United Kingdom",
@@ -114,7 +114,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "f2c0a884-4202-481b-9",
+                            Id = "f07dbf2a-c161-44f4-a",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 11,
                             Country = "United States",
@@ -127,11 +127,11 @@ namespace Application.Migrations
                             PublicationDate = "14 May 2019",
                             Publisher = "St Martin's Press",
                             Quantity = 3,
-                            Title = "Red, White & Royal Blue : A Novel"
+                            Title = "Red, White & Royal Blue"
                         },
                         new
                         {
-                            Id = "4f1a22df-c88b-497b-9",
+                            Id = "23ec139e-5dd0-4ac7-b",
                             Author = "Colleen Hoover",
                             BestsellerRank = 121,
                             Country = "United Kingdom",
@@ -148,7 +148,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "1c32c562-491c-46ad-8",
+                            Id = "a470ccbe-f021-4ac4-8",
                             Author = "Lucinda Riley",
                             BestsellerRank = 264,
                             Country = " United Kingdom",
@@ -165,7 +165,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "1c1280d6-bbc3-4bae-b",
+                            Id = "fd8dadb1-dba7-47b8-b",
                             Author = "Casey Mcquiston",
                             BestsellerRank = 168,
                             Country = "United States",
@@ -182,7 +182,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "c0c8af65-58ad-47fc-a",
+                            Id = "2f34a650-15a8-4d1e-9",
                             Author = "Morgan Rogers",
                             BestsellerRank = 280,
                             Country = "United States",
@@ -199,7 +199,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "f897f398-006d-43e4-8",
+                            Id = "c14d6552-d0ed-4063-8",
                             Author = "Sally Rooney",
                             BestsellerRank = 141,
                             Country = "United Kingdom",
@@ -216,7 +216,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "c74d27db-3009-4552-b",
+                            Id = "8818380f-fc8f-4bea-9",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 149,
                             Country = "United Kingdom",
@@ -233,7 +233,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "077dacd7-2fd5-49cb-9",
+                            Id = "b500d45d-45c8-43fe-b",
                             Author = " Rainbow Rowell",
                             BestsellerRank = 264,
                             Country = "United Kingdom",
@@ -250,7 +250,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "4f172e5a-83fc-49f7-9",
+                            Id = "0b7a37d5-1867-4d6d-a",
                             Author = "Stephen King",
                             BestsellerRank = 156,
                             Country = "United States",
@@ -267,7 +267,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "3f686227-8995-47b4-b",
+                            Id = "5f0ae6fb-6503-4f9c-9",
                             Author = "Stephen King",
                             BestsellerRank = 160,
                             Country = "United Kingdom",
@@ -284,7 +284,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "784ca575-b663-4121-a",
+                            Id = "0b320695-1a34-4554-a",
                             Author = "Shirley Jackson",
                             BestsellerRank = 579,
                             Country = "United Kingdom",
@@ -301,7 +301,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "af645778-4861-4549-9",
+                            Id = "b1a21f10-15cf-4ac3-8",
                             Author = "Bret Easton Ellis",
                             BestsellerRank = 303,
                             Country = "United States",
@@ -318,7 +318,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "bbf39443-729b-40d6-b",
+                            Id = "92cbb82a-4689-4c5a-a",
                             Author = " Mary Shelley",
                             BestsellerRank = 491,
                             Country = "United Kingdom",
@@ -335,7 +335,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "213fe91d-2f55-485c-b",
+                            Id = "332c6921-174e-4cb9-8",
                             Author = "Bram Stoker",
                             BestsellerRank = 342,
                             Country = " United Kingdom",
@@ -352,7 +352,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "b97b6019-b802-4f83-a",
+                            Id = "d90de4c6-66e0-4e8f-a",
                             Author = "John Fowles",
                             BestsellerRank = 604,
                             Country = "United Kingdom",
@@ -369,7 +369,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "7d2cbd34-a5ad-4ff6-b",
+                            Id = "fbec18c2-e141-4adc-8",
                             Author = "Ed Bryan",
                             BestsellerRank = 918,
                             Country = "United Kingdom",
@@ -382,11 +382,11 @@ namespace Application.Migrations
                             PublicationDate = "04 Jul 2019",
                             Publisher = "Nosy Crow Ltd",
                             Quantity = 13,
-                            Title = "Fairy Tales: Snow White"
+                            Title = "Snow White"
                         },
                         new
                         {
-                            Id = "c42c79f4-2b58-4d02-9",
+                            Id = "6bad84e8-40fc-407e-a",
                             Author = "Ed Bryan",
                             BestsellerRank = 651,
                             Country = "United Kingdom",
@@ -399,11 +399,11 @@ namespace Application.Migrations
                             PublicationDate = "07 Mar 2019",
                             Publisher = "Nosy Crow Ltd",
                             Quantity = 12,
-                            Title = "Fairy Tales: Goldilocks and the Three Bears"
+                            Title = "Goldilocks and the Three Bears"
                         },
                         new
                         {
-                            Id = "dac131e0-8b02-41b2-9",
+                            Id = "29cd2764-d977-4bef-8",
                             Author = "Nosy Crow",
                             BestsellerRank = 781,
                             Country = "United Kingdom",
@@ -416,11 +416,11 @@ namespace Application.Migrations
                             PublicationDate = "31 Dec 2016",
                             Publisher = "Nosy Crow Ltd",
                             Quantity = 2,
-                            Title = "Fairy Tales: Little Red Riding Hood"
+                            Title = "Little Red Riding Hood"
                         },
                         new
                         {
-                            Id = "0732f3b0-ffcd-4c1d-a",
+                            Id = "f57eb8fd-0d3a-4bf9-9",
                             Author = "Yung Pueblo",
                             BestsellerRank = 152,
                             Country = "United States",
@@ -437,13 +437,13 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "1cb0881e-babc-421b-b",
+                            Id = "fce2d9f7-f8df-4fe4-9",
                             Author = "Rupi Kaur",
                             BestsellerRank = 332,
                             Country = "United States",
                             Description = "The book is divided into four chapters, and each chapter serves a different purpose. Deals with a different pain. Heals a different heartache. Milk and Honey takes readers through a journey of the most bitter moments in life and finds sweetness in them because there is sweetness everywhere if you are just willing to look.",
                             GenreTitle = "Poetry & Drama",
-                            ImageUrl = "https://localhost:5001/images/poetry&drama/",
+                            ImageUrl = "https://localhost:5001/images/poetry&drama/MilkandHoney.jpg",
                             Language = "English",
                             Pages = 208,
                             Price = 2014.0,
@@ -454,7 +454,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "b5dcdc02-369e-4b66-a",
+                            Id = "e2723d86-32f9-49d8-9",
                             Author = "Yung Pueblo",
                             BestsellerRank = 138,
                             Country = "United States",
@@ -471,7 +471,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "84102564-c20d-4705-8",
+                            Id = "934253bd-f1ba-4708-8",
                             Author = " George Orwell",
                             BestsellerRank = 49,
                             Country = "United Kingdom",
@@ -484,11 +484,11 @@ namespace Application.Migrations
                             PublicationDate = "01 Oct 2008",
                             Publisher = " Penguin Books Ltd",
                             Quantity = 0,
-                            Title = "1984 : The dystopian classic"
+                            Title = "1984"
                         },
                         new
                         {
-                            Id = "98f27d9a-3016-4f3b-a",
+                            Id = "11d8f3f4-f34f-428b-b",
                             Author = "George Orwell",
                             BestsellerRank = 77,
                             Country = "United Kingdom",
@@ -501,11 +501,11 @@ namespace Application.Migrations
                             PublicationDate = "01 Oct 2008",
                             Publisher = "Penguin Books Ltd",
                             Quantity = 20,
-                            Title = "Animal Farm : The dystopian classic"
+                            Title = "Animal Farm"
                         },
                         new
                         {
-                            Id = "94c09792-5b15-46e1-8",
+                            Id = "966e6f74-b405-4c70-a",
                             Author = "Andy Weir",
                             BestsellerRank = 980,
                             Country = "United Kingdom",
@@ -522,11 +522,11 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "6ca810a3-5b3a-4dae-b",
+                            Id = "aa8594fd-dece-4dd8-b",
                             Author = "Orson Scott Card",
                             BestsellerRank = 461,
                             Country = "United States",
-                            Description = "Ender's Game is the classic Hugo and Nebula award-winning science fiction novel of a young boy's recruitment into the midst of an interstellar war. In order to develop a secure defense against a hostile alien race's next attack, government agencies breed child geniuses and train them as soldiers. A brilliant young boy, Andrew Ender Wiggin lives with his kind but distant parents, his sadistic brother Peter, and the person he loves more than anyone else, his sister Valentine. Peter and Valentine were candidates for the soldier-training program but didn't make the cut--young Ender is the Wiggin drafted to the orbiting Battle School for rigorous military training. Ender's skills make him a leader in school and respected in the Battle Room, where children play at mock battles in zero gravity. Yet growing up in an artificial community of young soldiers Ender suffers greatly from isolation, rivalry from his peers, pressure from the adult teachers, and an unsettling fear of the alien invaders. His psychological battles include loneliness, fear that he is becoming like the cruel brother he remembers, and fanning the flames of devotion to his beloved sister. ",
+                            Description = "Ender's Game is the classic Hugo and Nebula award-winning science fiction novel of a young boy's recruitment into the midst of an interstellar war. In order to develop a secure defense against a hostile alien race's next attack, government agencies breed child geniuses and train them as soldiers. A brilliant young boy, Andrew Ender Wiggin lives with his kind but distant parents, his sadistic brother Peter, and the person he loves more than anyone else, his sister Valentine. Peter and Valentine were candidates for the soldier-training program but didn't make the cut--young Ender is the Wiggin drafted to the orbiting Battle School for rigorous military training.",
                             GenreTitle = "Science Fiction",
                             ImageUrl = "https://localhost:5001/images/fiction/EndersGame.jpg",
                             Language = "English",
@@ -539,7 +539,7 @@ namespace Application.Migrations
                         },
                         new
                         {
-                            Id = "a6840c62-d29c-4578-9",
+                            Id = "81dfe19a-85fb-4f37-8",
                             Author = "Cixin Liu ",
                             BestsellerRank = 166,
                             Country = " United Kingdom",
@@ -554,6 +554,39 @@ namespace Application.Migrations
                             Quantity = 20,
                             Title = "Death's End"
                         });
+                });
+
+            modelBuilder.Entity("Application.Models.Cart", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("Application.Models.CartItem", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("BookId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CartId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("CartId");
+
+                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("Application.Models.Genre", b =>
@@ -576,37 +609,37 @@ namespace Application.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "4d88758d-f63e-42df-8",
+                            Id = "9390a8ca-c6de-492f-b",
                             Description = "All Fiction Books",
                             Title = "Science Fiction"
                         },
                         new
                         {
-                            Id = "c8cee82f-58a6-4fd3-8",
+                            Id = "e6aa4b32-6128-4a40-8",
                             Description = "All Romance Books",
                             Title = "Romance"
                         },
                         new
                         {
-                            Id = "be6db1ea-cf0e-41f2-8",
+                            Id = "7e6f69f0-eee7-413c-8",
                             Description = "All Horror  Books",
                             Title = "Horror"
                         },
                         new
                         {
-                            Id = "20eabe0a-ce27-4045-9",
+                            Id = "360ef053-f356-43f8-a",
                             Description = "All Poetry & Drama Books",
                             Title = "Poetry & Drama"
                         },
                         new
                         {
-                            Id = "b02ca48f-f6cb-40ae-a",
+                            Id = "56bf68c1-8dea-4a26-b",
                             Description = "All Thriller Books",
                             Title = "Thriller"
                         },
                         new
                         {
-                            Id = "cbdd84fc-af58-42ab-9",
+                            Id = "461e5a68-a1e0-44b8-9",
                             Description = "All Children's Books Books",
                             Title = "Children's Books"
                         });
@@ -618,15 +651,19 @@ namespace Application.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
 
-                    b.Property<string>("FirstName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<string>("Country")
+                        .HasMaxLength(55)
+                        .HasColumnType("nvarchar(55)");
 
-                    b.Property<string>("LastName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<double>("OrderTotal")
+                        .HasColumnType("float");
+
+                    b.Property<string>("State")
+                        .HasMaxLength(55)
+                        .HasColumnType("nvarchar(55)");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -868,6 +905,21 @@ namespace Application.Migrations
                     b.Navigation("Genre");
                 });
 
+            modelBuilder.Entity("Application.Models.CartItem", b =>
+                {
+                    b.HasOne("Application.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId");
+
+                    b.HasOne("Application.Models.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId");
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Cart");
+                });
+
             modelBuilder.Entity("Application.Models.Order", b =>
                 {
                     b.HasOne("Application.Models.User", "User")
@@ -926,6 +978,11 @@ namespace Application.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Application.Models.Cart", b =>
+                {
+                    b.Navigation("CartItems");
                 });
 
             modelBuilder.Entity("Application.Models.Genre", b =>

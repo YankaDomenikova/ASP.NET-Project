@@ -8,15 +8,17 @@ namespace Application.Models
 {
     public class Order : BaseModel
     {
-        [MinLength(2)]
-        [MaxLength(50)]
-        public string FirstName { get; set; }
 
-        [MinLength(2)]
-        [MaxLength(50)]
-        public string LastName { get; set; }
-
+        [MaxLength(75)]
         public string Address { get; set; }
+
+        [MaxLength(55)]
+        public string State { get; set; }
+
+        [MaxLength(55)]
+        public string Country { get; set; }
+
+        public double OrderTotal { get; set; }
 
         public User User { get; set; }
     }

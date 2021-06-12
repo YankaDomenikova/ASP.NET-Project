@@ -1,4 +1,5 @@
-﻿/*navbar*/ 
+﻿/* Navbar
+-------------------------------------------------- */
 .navbar {
     background-color: black;
     height: 72px;
@@ -41,7 +42,8 @@ a .icon {
 }
 
 
-/*footer*/
+/* Footer
+-------------------------------------------------- */
 .footer {
     background-color: black;
     height: 72px;
@@ -59,7 +61,8 @@ footer a:hover {
 }
 
 
-/*index page*/
+/* Index page
+-------------------------------------------------- */
 .index {
     margin-top: 55px;
 }
@@ -71,20 +74,10 @@ h1.welcome{
     width: auto;
 }
 
-p a.search {
+a.search {
     color: black;
     font-size: 22px;
 }
 
-p a.search i{
-    padding: 5px;
-}
-
-p a.search:hover,
-p a.search i.fa-search:hover {
-    color: #cc1555;
-    font-size: 22px;
-    text-decoration: none
-}
-
-/*Search by genre*/
+/* Search by genre
+-------------------------------------------------- */

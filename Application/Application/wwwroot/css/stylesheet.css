@@ -81,10 +81,10 @@ p a.search i{
 }
 
 p a.search:hover,
-p a.search i:hover {
-     color: #c4c108;
-     font-size: 22px;
-     text-decoration: none
+p a.search i.fa-search:hover {
+    color: #cc1555;
+    font-size: 22px;
+    text-decoration: none
 }
 
 /*Search by genre*/

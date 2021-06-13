@@ -339,5 +339,10 @@ h1.heading-text {
 }
 
 h4.login-text {
-    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.form-group p.links a,
+.form-group p.links a:hover {
+    color: black;
 }

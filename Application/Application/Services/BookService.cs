@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Application.Data;
+using Application.Models;
 using Application.Models.ViewModels;
 using Application.Services.Interfaces;
 
@@ -54,5 +55,26 @@ namespace Application.Services
             return res;
         }
 
+        public void AddBook(BookViewModel model)
+        {
+            Book book = new Book()
+            {
+                Title = model.Title,
+                Author = model.Author,
+                Description = model.Description,
+                Price = model.Price,
+                Quantity = 0,
+                Language = model.Language,
+                Pages = model.Pages,
+                PublicationDate = model.PublicationDate,
+                Publisher = model.Publisher,
+                Country = model.Country,
+                BestsellerRank = model.BestsellerRank,
+                GenreTitle = model.GenreTitle
+            };
+
+            dbContext.Add(book);
+            dbContext.SaveChanges();
+        }
     }
 }

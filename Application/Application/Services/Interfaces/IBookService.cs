@@ -12,5 +12,7 @@ namespace Application.Services.Interfaces
         List<BookViewModel> GetAllBooks();
 
         BookViewModel GetIndividualBook(string id);
+
+        void AddBook(BookViewModel model);
     }
 }

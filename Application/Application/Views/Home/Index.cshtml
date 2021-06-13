@@ -4,12 +4,13 @@
 <div class="container index">
     <div class="text-center">
         <h1 class="welcome">Welcome</h1>
-        <img class="img-book" src="~/book.jpg" alt="Alternate Text" />
+        <img class="img-book" src="~/images/book.jpg" alt="Alternate Text" />
         <p>
-            <a class="search" asp-area="" asp-controller="Genre" asp-action="SearchByGenres">
+            <a class="search" asp-controller="Genre" asp-action="SearchByGenres">
                 <i class="fa fa-search" aria-hidden="true"></i>Search Books
             </a>
         </p>
+        <a class="sell-book" asp-controller="Book" asp-action="SellBook"><i class="icon-tag"></i>Sell Books</a>
     </div>
 
 </div>

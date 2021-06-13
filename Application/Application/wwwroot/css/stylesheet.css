@@ -77,7 +77,7 @@ h1.welcome{
     width: auto;
 }
 
-a.search {
+a.search{
     color: black;
     font-size: 22px;
 }
@@ -85,6 +85,7 @@ a.search:hover {
     color: #cc1555;
     text-decoration: none;
 }
+
 a i {
     color: #cc1555;
     margin: 5px;

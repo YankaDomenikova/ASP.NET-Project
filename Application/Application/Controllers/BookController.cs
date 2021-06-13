@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Application.Models.ViewModels;
 using Application.Services.Interfaces;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers
@@ -34,6 +35,7 @@ namespace Application.Controllers
             return View("BookNotFound");
         }
 
+        [Authorize]
         public IActionResult SellBook()
         {
 

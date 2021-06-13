@@ -314,7 +314,8 @@ form.form {
 }
 
 .form-group input,
-.form-group input:focus {
+.form-group input:focus,
+.form-group input:visited{
     height: 55px;
     background-color: black;
     color: white;
@@ -324,8 +325,8 @@ form.form {
     font-size: 18px;
 }
 
-form.form input.btn-submit {
-    color: white;
+.btn-submit {
+    color: black;
     background-color: #cc1555;
     margin: 10px 120px;
     width: 250px;
@@ -333,7 +334,10 @@ form.form input.btn-submit {
 
 }
 
-/*h1.sell-books-text{
-    color: red;
-    margin-top: 50px;
-}*/
+h1.heading-text {
+    margin-top: 20px;
+}
+
+h4.login-text {
+    margin-top: 10px;
+}

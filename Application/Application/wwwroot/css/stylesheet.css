@@ -73,15 +73,17 @@ h1.welcome{
     font-size: 65px;
 }
 .img-book {
-    height: 250px;
+    height: 260px;
     width: auto;
 }
 
-a.search{
+a.search,
+a.sell-book {
     color: black;
-    font-size: 22px;
+    font-size: 23px;
 }
-a.search:hover {
+a.search:hover,
+a.sell-book:hover{
     color: #cc1555;
     text-decoration: none;
 }
@@ -272,7 +274,7 @@ div.cart-btn a.disabled{
 
 /*Privacy page
 -------------------------------------------------- */
-div.privacy{
+div.heading{
     margin-top: 100px;
 }
 
@@ -290,8 +292,48 @@ hr.pr-line-two {
     height: 2px;
 }
 
-/*About page
+
+/*Forms
 -------------------------------------------------- */
 
-/*Register
--------------------------------------------------- */
+div.form-container {
+    background-color: #faf88e;
+    width: 550px;
+    margin: 10px auto 50px auto;
+    border-radius: 25px;
+}
+
+form.form {
+    padding: 20px 30px;
+    margin: auto;
+}
+
+.form-group{
+    width: 450px;
+    margin: 20px auto;
+}
+
+.form-group input,
+.form-group input:focus {
+    height: 55px;
+    background-color: black;
+    color: white;
+}
+
+.form-group label{
+    font-size: 18px;
+}
+
+form.form input.btn-submit {
+    color: white;
+    background-color: #cc1555;
+    margin: 10px 120px;
+    width: 250px;
+    height: 50px;
+
+}
+
+/*h1.sell-books-text{
+    color: red;
+    margin-top: 50px;
+}*/

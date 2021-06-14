@@ -67,7 +67,6 @@ footer a:hover {
 /* Index page
 -------------------------------------------------- */
 .index {
-    color: red;
     margin-top: 55px;
 }
 h1.welcome{
@@ -298,7 +297,7 @@ hr.pr-line-two {
 -------------------------------------------------- */
 
 div.form-container {
-    background-color: red;
+    background-color: #faf88e;
     width: 550px;
     margin: 10px auto 50px auto;
     border-radius: 25px;

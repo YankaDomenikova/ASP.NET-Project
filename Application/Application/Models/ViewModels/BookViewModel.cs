@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Application.Models.ViewModels
+﻿namespace Application.Models.ViewModels
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+
     public class BookViewModel
     {
         public string Id { get; set; }

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Application.Models;
-
-using Microsoft.EntityFrameworkCore;
-
-namespace Application.Data.Seed
+﻿namespace Application.Data.Seed
 {
+    using System.Collections.Generic;
+
+    using Application.Models;
+
+    using Microsoft.EntityFrameworkCore;
+
     public class SeedData
     {
         public ModelBuilder GenerateModels(ModelBuilder modelBuilder)

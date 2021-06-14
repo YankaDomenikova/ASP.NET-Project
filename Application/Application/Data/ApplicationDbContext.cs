@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Application.Data.Seed;
-using Application.Models;
-
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-
-namespace Application.Data
+﻿namespace Application.Data
 {
+    using Application.Data.Seed;
+    using Application.Models;
+
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
+
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<Book> Books { get; set; }

@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Application.Services.Interfaces;
-
-using Microsoft.AspNetCore.Mvc;
-
-namespace Application.Controllers
+﻿namespace Application.Controllers
 {
+    using Application.Services.Interfaces;
+
+    using Microsoft.AspNetCore.Mvc;
+
     public class GenreController : Controller
     {
         private readonly IGenreService genreService;

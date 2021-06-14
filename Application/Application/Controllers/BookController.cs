@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Application.Models.ViewModels;
-using Application.Services.Interfaces;
-
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-
-namespace Application.Controllers
+﻿namespace Application.Controllers
 {
+    using Application.Models.ViewModels;
+    using Application.Services.Interfaces;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
     public class BookController : Controller
     {
         private readonly IBookService bookService;

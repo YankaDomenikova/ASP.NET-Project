@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Application.Data;
-using Application.Models;
-using Application.Models.ViewModels;
-using Application.Services.Interfaces;
-
-namespace Application.Services
+﻿namespace Application.Services
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
+    using Application.Data;
+    using Application.Models;
+    using Application.Models.ViewModels;
+    using Application.Services.Interfaces;
+
     public class BookService : IBookService
     {
         private readonly ApplicationDbContext dbContext;

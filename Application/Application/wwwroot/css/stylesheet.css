@@ -320,6 +320,7 @@ form.form {
         height: 55px;
         background-color: black;
         color: white;
+        border-radius: 20px;
     }
 
     .form-group label {
@@ -345,4 +346,5 @@ h4.login-text {
 .form-group p.links a,
 .form-group p.links a:hover {
     color: black;
+    font-size: 16px;
 }

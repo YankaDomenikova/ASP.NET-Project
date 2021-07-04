@@ -67,7 +67,6 @@ footer a:hover {
 /* Index page
 -------------------------------------------------- */
 .index {
-    color: black;
     margin-top: 55px;
 }
 h1.welcome{
@@ -121,7 +120,7 @@ a.genre-link {
 
 
 li.genre-item:hover {
-    background-color: red;
+    background-color: black;
 }
 
 /*li.genre-item:hover a.genre-link{

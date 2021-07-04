@@ -121,7 +121,7 @@ a.genre-link {
 
 
 li.genre-item:hover {
-    background-color: black;
+    background-color: red;
 }
 
 /*li.genre-item:hover a.genre-link{

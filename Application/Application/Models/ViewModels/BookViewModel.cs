@@ -9,7 +9,7 @@
 
         [Required]
         [MinLength(1)]
-        [MaxLength(70)]
+        [MaxLength(80)]
         [Display(Name = "Title")]
         public string Title { get; set; }
 

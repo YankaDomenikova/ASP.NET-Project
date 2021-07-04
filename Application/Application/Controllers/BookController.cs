@@ -46,8 +46,6 @@
             }
             else
             {
-                //return this.BadRequest();
-                ModelState.AddModelError(string.Empty, "Invalid input.");
                 return View("SellBook");
             }
         }

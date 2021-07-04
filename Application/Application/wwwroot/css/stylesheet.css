@@ -124,11 +124,16 @@ li.genre-item:hover {
     background-color: black;
 }
 
+/*li.genre-item:hover a.genre-link{
+    color: #faf88e;
+}
+*/
 
+/*
 a.genre-link:hover {
     color: #faf88e;
     text-decoration: none;
-}
+}*/
 
 
 h1 i {

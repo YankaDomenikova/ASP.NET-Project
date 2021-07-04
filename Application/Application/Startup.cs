@@ -13,7 +13,6 @@ namespace Application
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
 
-
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -39,8 +38,8 @@ namespace Application
             services.AddRazorPages()
                     .AddRazorRuntimeCompilation();
 
-            services.AddTransient<IBookService, BookService>();
-            services.AddTransient<IGenreService, GenreService>();
+            services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IGenreService, GenreService>();
 
             services.Configure<IdentityOptions>(options =>
             {

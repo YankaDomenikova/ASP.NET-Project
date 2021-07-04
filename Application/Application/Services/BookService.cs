@@ -61,7 +61,7 @@
                 Author = model.Author,
                 Description = model.Description,
                 Price = model.Price,
-                Quantity = 0,
+                Quantity = model.Quantity,
                 Language = model.Language,
                 Pages = model.Pages,
                 PublicationDate = model.PublicationDate,

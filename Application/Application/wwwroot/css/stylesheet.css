@@ -1,4 +1,10 @@
-﻿/* Navbar
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar
 -------------------------------------------------- */
 .navbar {
     background-color: black;
@@ -70,7 +76,6 @@ footer a:hover {
     margin-top: 55px;
 }
 h1.welcome{
-    color: red;
     font-size: 65px;
 }
 .img-book {
@@ -124,16 +129,14 @@ li.genre-item:hover {
     background-color: black;
 }
 
-/*li.genre-item:hover a.genre-link{
+li.genre-item:hover a.genre-link{
     color: #faf88e;
 }
-*/
 
-/*
+
 a.genre-link:hover {
-    color: #faf88e;
     text-decoration: none;
-}*/
+}
 
 
 h1 i {
@@ -302,6 +305,8 @@ hr.pr-line-two {
 /*Forms
 -------------------------------------------------- */
 
+
+/*#fcfbb6*/
 div.form-container {
     background-color: #f6f4a2;
     width: 550px;
